@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THEBGSMP official website</title>
+    <link rel="stylesheet" href="THEBGSMPofficial.com">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .info {
+            font-size: 1.5rem;
+            background: #333;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .copy-btn {
+            font-size: 1rem;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .copy-btn:hover {
+            background: #45a049;
+        }
+        .discord {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            background: #5865F2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .stats {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+        .staff {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            background: #444;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .staff img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .server-image {
+            margin-top: 30px;
+        }
+        .server-image img {
+            width: 300px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добре дошли в THEBGSMP официален сайт!</h1>
+    <p class="info">IP: <strong id="server-ip">THEBGSMP.aternos.me</strong></p>
+    <button class="copy-btn" onclick="copyIP()">Копирай IP</button>
+    <br>
+    <a href="https://discord.gg/dhzFEzVE" class="discord" target="_blank">Влез в нашия Discord</a>
+    <div class="stats">
+        <p id="mc-players">Играчите в сървъра: Зареждане...</p>
+        <p id="discord-online">Онлайн в Discord: Зареждане...</p>
+    </div>
+    
+    <div class="staff">
+        <h2>Стаф</h2>
+        <div>
+            <img src="owner-kalata.png" alt="Owner Kalata">
+            <p><strong>Owner:</strong> Kalata</p>
+        </div>
+        <div>
+            <img src="developer-gog4eto.png" alt="Developer Gog4eto">
+            <p><strong>Developer:</strong> Gog4eto</p>
+        </div>
+    </div>
+    
+    <div class="server-image">
+
+    </div>
+    
+    <script>
+        function copyIP() {
+            let ipText = document.getElementById("server-ip").innerText;
+            navigator.clipboard.writeText(ipText).then(() => {
+                alert("IP адресът е копиран!");
+            }).catch(err => {
+                console.error("Неуспешно копиране: ", err);
+            });
+        }
+    </script>
+</body>
+</html>

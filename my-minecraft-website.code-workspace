@@ -1,0 +1,16 @@
+ <rttert
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пренасочване</title>
+    <script>
+        // Пренасочва всички заявки към thebgsmofficial.com
+        window.location.href = "https://thebgsmofficial.com";
+    </script>
+</head>
+<body>
+    <!-- Може да поставиш някакво съобщение тук, ако искаш -->
+    <p>Пренасочвате към thebgsmofficial.com...</p>
+</body>
+</html>
